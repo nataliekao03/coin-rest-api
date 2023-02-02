@@ -16,6 +16,7 @@ app.get('/flip-coin', (request, response) => {
     response.send(coinValue);
 });
 
+
 app.get('/flip-coins', (request, response) => {
     const times = request.query.times;
     if(times && times > 0){
